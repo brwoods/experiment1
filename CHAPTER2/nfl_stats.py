@@ -31,9 +31,8 @@ with open('D:\\Learn_AI_Assisted_Programming_2ed\\CHAPTER2\\nfl_offensive_stats.
         for row in csv_reader:
             # Check if the player position is "QB"
             if row[2] == "QB":
-                player_name = row[1]
+                player_name = row[3]
                 passing_yards = int(row[7])
-                
                 # Add the passing yards to the player's total
                 if player_name in passing_yards_by_player:
                     passing_yards_by_player[player_name] += passing_yards
