@@ -1,5 +1,5 @@
 import pyperclip
-def clean_email():
+def clean_up_email():
     '''
         This function removes the leading '>' characters from each line of the copied text. 
         It is useful for cleaning up email text that has been copied from an email client. 
@@ -12,3 +12,4 @@ def clean_email():
         lines[i] = lines[i].lstrip(' >')
     text = '\n'.join(lines)
     pyperclip.copy(text)
+    clean_up_email()
