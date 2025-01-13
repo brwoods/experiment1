@@ -1,3 +1,6 @@
+# Description: This program is a text analysis program that uses a signature to determine the author of a text.
+# Date: 01/12/2025
+# Author: Bruce Woods as found in Learn AI-Assisted Python Programming, 2nd Edition by Leo Porter and Daniel Zingaro 
 import string
 
 def clean_word(word):
